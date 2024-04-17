@@ -259,6 +259,7 @@ h1 span {
     font-weight: 600;
     font-size: 0.8rem;
     margin: 1rem 0;
+
 }
 
 .upload .search {
@@ -269,6 +270,7 @@ h1 span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .upload .search input {
@@ -283,6 +285,7 @@ h1 span {
     font-family: var(--font3);
     font-size: 0.8rem;
     text-align: center;
+    outline: none;
 }
 
 .search button {
