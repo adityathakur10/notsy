@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/Chatpdf.css">
+    <script src="/javascripts/Chatpdf.js" defer></script>
+    <title>Notsy</title>
+</head>
+
+<body>
+    <section class="pdfvwr">
+        <header class="pdfvwr-header">
+            <div class="pdfvwr-header-title">
+                <strong> YOUR PDF </strong>
+            </div>
+        </header>
+
+        <object data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">
+        </object>
+        </main>
+    </section>
+
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msger-header-title">
+                <strong> NOTSY </strong>
+            </div>
+        </header>
+
+        <main class="msger-chat">
+
+            <div class="msg right-msg">
+                <div class="msg-img"></div>
+
+                <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">User</div>
+                        <div class="msg-info-time"></div>
+                    </div>
+
+                    <div class="msg-text">
+                        Hi Notsy
+                    </div>
+                </div>
+            </div>
+            <div class="msg left-msg">
+                <div class="msg-img"></div>
+
+                <div class="msg-bubble">
+                    <div class="msg-info">
+                        <div class="msg-info-name">Notsy</div>
+                        <div class="msg-info-time"></div>
+                    </div>
+
+                    <div class="msg-text">
+                        Hi There, What do you Wanna learn today
+                    </div>
+                </div>
+            </div>
+        </main>
+<script>
+    fetch('/chat', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ ques: 'YOUR_QUESTION_HERE' }) // Replace with your question
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Extract the ans variable from the JSON file
+        const ans = data.ans;
+        // Display the ans variable on the HTML page
+        document.getElementById('messageResult').textContent = ans;
+    })
+    .catch(error => {
+        console.error('Error fetching JSON:', error);
+        document.getElementById('messageResult').textContent = 'Error fetching response';
+    });
+</script>
+        <form class="msger-inputarea" action="/chat" method="post" >
+            <input type="text" class="msger-input" placeholder="Enter your message..." name="ques">
+            <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+    </section>
+</body>
+
+</html>

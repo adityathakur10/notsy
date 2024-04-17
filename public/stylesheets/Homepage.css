@@ -1,0 +1,479 @@
+@font-face {
+    font-family: "Yantramanav-Thin.ttf";
+    src: url(/images/Yantramanav-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Yantramanav-Regular.ttf";
+    src: url(/images/Yantramanav-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Yantramanav-Medium.ttf";
+    src: url(/images/Yantramanav-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Yantramanav-Bold.ttf";
+    src: url(/images/Yantramanav-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Yantramanav-Black.ttf";
+    src: url(/images/Yantramanav-Black.ttf);
+}
+
+:root {
+    --font1: 'Yantramanav-Black.ttf';
+    --font2: 'Yantramanav-Bold.ttf';
+    --font3: 'Yantramanav-Regular.ttf';
+    --fontcolor: #252525;
+    --bg: #FFFFF4;
+    --color1: #CDEE2C;
+    --color2: #FFF500;
+    --color3: #FFD6C2;
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: var(--fontcolor);
+    background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: 0 80px;
+    gap: 33vw;
+    border-bottom: 1px solid#252525;
+}
+
+.navbar h1 {
+    font-family: var(--font1);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.nav-btn {
+    display: flex;
+    float: left;
+    align-items: center;
+    gap: 2.5vw;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.nav-btn p {
+    font-family: var(--font3);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nav-btn .border {
+    display: flex;
+    float: left;
+    gap: 2.5vw;
+}
+
+.nav-btn .border p {
+    border: none;
+    padding: 4px 16px;
+}
+
+.nav-btn .border p:hover {
+    border: 2px solid #252525;
+    border-radius: 10px;
+    padding: 4px 16px;
+}
+
+
+.login-button {
+    z-index: 2;
+    font-family: var(--font3);
+    font-size: 1rem;
+    font-weight: 400;
+    border: 2px solid #252525;
+    box-shadow: 2px 2px 0px 0px #252525F2;
+    padding: 4px 24px;
+    border-radius: 10px;
+    background-color: var(--color1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    font-family: var(--font3);
+    color: var(--fontcolor);
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #252525;
+    box-shadow: none;
+    transform: scale(0.95);
+    padding: 4px 24px;
+    border-radius: 10px;
+}
+
+.User {
+    display: flex;
+    float: left;
+    align-items: center;
+    gap: 7px;
+}
+
+.nav-btn p i {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+.hero {
+    padding-top: 2vh;
+    position: relative;
+}
+
+.hero-content h1 {
+    position: relative;
+    font-family: var(--font2);
+    font-size: 62px;
+    width: 40vw;
+    line-height: 4.5vw;
+    z-index: 1;
+    padding-top: 2.5vh;
+}
+
+.hero-sec {
+    display: flex;
+    float: left;
+    margin-left: 5vw;
+    padding-top: 6.5vh;
+    gap: 5.5vw;
+}
+
+.hero-content h1 span {
+    position: relative;
+    font-family: var(--font2);
+    font-size: 62px;
+    color: #FFF500;
+    width: 40vw;
+    line-height: 4.5vw;
+    z-index: 1;
+}
+
+.hero-content p {
+    position: relative;
+    font-family: var(--font3);
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 2vh;
+    width: 42vw;
+    z-index: 1;
+}
+
+.hero-content img {
+    position: absolute;
+    top: 23.5vh;
+    left: 2.8vw;
+    z-index: 0;
+}
+
+.hero-ill {
+    width: 639px;
+    height: 368px;
+}
+
+.upload-section {
+    display: flex;
+    float: left;
+    margin: 5vh 5vw;
+    gap: 8vw;
+}
+
+.upload {
+    width: 40vw;
+    height: 35vh;
+    background-color: #FFD6C233;
+    border: 3px solid #252525;
+    box-shadow: 2px 2px 0px 0px #252525;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 24px 124px;
+}
+
+#PDF {
+    background-color: #FFF50033;
+}
+
+.upload-heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 5vh;
+    font-weight: 900;
+    text-align: center;
+}
+
+.upload-btn {
+    margin-top: 2vh;
+    font-family: var(--font3);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 4px 16px 4px 16px;
+    border-radius: 5px;
+    border: 2px solid #252525;
+    background-color: var(--color3);
+}
+
+#PDF .upload-btn {
+    background-color: var(--color2);
+}
+
+.upload span {
+    font-family: var(--font3);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 1.8vh 0;
+}
+
+.upload .search {
+    border: 1px solid #252525;
+    width: 22.4vw;
+    height: 34px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upload .search input {
+    border-left: 1px solid#252525;
+    background-color: #FFF7EA;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    width: 17vw;
+    height: 32px;
+    color: var(--fontcolor);
+    font-family: var(--font3);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.search button{
+    
+}
+
+.upload .search i {
+    padding: 9px 6px;
+    font-size: 0.8rem;
+}
+
+#PDF .search input {
+    background-color: #FFFDCF;
+}
+
+.page-2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.notes-heading {
+    display: flex;
+    float: left;
+    gap: 2vw;
+    margin: 2vh 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.notes-heading h4 {
+    font-family: var(--font3);
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 2px solid #252525;
+    box-shadow: 2px 2px 0px 0px #252525F2;
+    padding: 4px 4px;
+    border-radius: 2px;
+    background-color: var(--color1);
+}
+
+.notes-heading p {
+    font-family: var(--font3);
+    font-size: 16px;
+    width: 75vw;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    padding: 3vh 5vw;
+}
+
+.box {
+    width: calc((100% - 10vw) / 3);
+    /* Calculate width based on container width and gap */
+    height: 30vh;
+    border-radius: 5px;
+    background-color: var(--bg);
+    border: 3px solid #252525;
+    box-shadow: 2px 2px 0px 0px #252525;
+    padding: 2vh 1vw;
+}
+
+.box i {
+    font-size: 2rem;
+}
+
+.box h1 {
+    margin: 2vh 0;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    border-bottom: 2px solid#252525;
+}
+
+.box p {
+    font-size: 0.8rem;
+    text-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box:nth-child(even) {
+    background-color: var(--color1);
+    /* Alternate color for even boxes */
+}
+
+/* footer {
+    margin-top: 5vh;
+    width: 100%;
+    height: 30vh;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.media {
+    display: flex;
+    float: left;
+    margin-top: 8vh;
+    gap: 1.5vw;
+}
+
+.insta {
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg);
+    border: var(--bg);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg);
+    border: var(--bg);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin {
+    width: 24px;
+    height: 24px;
+    background-color: var(--bg);
+    border: var(--bg);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 4vw; */
+    gap: 2vw;
+}
+
+.menu p {
+    font-family: var(--font3);
+    color: var(--bg);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    position: relative;
+    margin-top: 5vh;
+    width: 100%;
+    height: 30vh;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .border {
+        width: 80vw;
+        height: 10px;
+        border-bottom: 2px solid#FFFFF4;
+        margin-top: 1.5vh;
+    }
+
+    .contact-button {
+        position: absolute; 
+        bottom: 8vh;
+        right: 10vw;
+        font-family: var(--font3);
+        font-size: 1.1rem;
+        font-weight: 400;
+        border: 2px solid #252525;
+        /* box-shadow: 2px 2px 0px 0px; */
+        padding: 4px 16px;
+        border-radius: 20px;
+        background-color: var(--color1);
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .contact-button:hover {
+        font-family: var(--font3);
+        color: var(--fontcolor);
+        font-size: 18px;
+        font-weight: 400;
+        border: 2px solid #252525;
+        box-shadow: none;
+        transform: scale(0.95);
+        padding: 4px 16px;
+        border-radius: 20px;
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
