@@ -19,7 +19,7 @@
 <body>
     <div class="main">
         <div class="navbar">
-            <h1>NOTEZARD</h1>
+            <h1 id="Logo">NOTSY</h1>
             <div class="nav-btn">
                 <div class="border">
                     <p>HOME</p>
@@ -31,14 +31,17 @@
             </div>
         </div>
 
+        <form hidden id="uploadform" action="/fileupload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image"></input>
+        </form>
+
         <div class="hero">
             <div class="hero-sec">
                 <div class="hero-content">
-                    <h1>CONVERT AND <span>UNDERSTAND</span> VIDEOS & PDF WITH AI</h1>
+                    <h1><span>UNDERSTAND</span> VIDEOS & PDF EASILY WITH THE HELP OF AI</h1>
                     <p>Get the most out of videos, YouTube or those boring lectures that you would normally never
                         finish.
                     </p>
-                    <img src="/images/BackHighlight.svg">
                 </div>
                 <div class="hero-ill">
                     <img src="/images/final.svg" alt="ILLUSTRATION">
@@ -49,7 +52,7 @@
         <div class="upload-section">
             <div class="upload" id="video">
                 <h1 class="upload-heading">UPLOAD A PDF TO CHAT WITH IT</h1>
-                <button class="upload-btn">UPLOAD PDF</button>
+                <button class="upload-btn" id="pdf-upload">UPLOAD PDF</button>
                 <span class="or">OR</span>
                 <div class="search">
                     <form action="#">
@@ -84,66 +87,6 @@
 
         <div class="notes">
             <div class="notes-container">
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <a href="blank"></a>
-                    <h1>
-                        COMPUTER NETWORKS
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>DSA</h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>PYTHON</h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        NUMERICAL ANALYSIS
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        OPERATING SYSTEM
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        DIGITAL SYSTEM
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        ANALOG ELECTRONICS
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        ADVANCED ALGO
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-note-sticky" style="color: #252525;"></i>
-                    <h1>
-                        AI
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua.</p>
-                </div>
             </div>
         </div>
 
