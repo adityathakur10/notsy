@@ -41,6 +41,13 @@ router.get('/chatvideo', function(req, res, next) {
 router.get('/form', function(req, res, next) {
   res.render('form');
 });
+router.post('/fileupload',upload.single("pdf"),(req,res)=>{
+  const uniqueName = req.file.filename;
+  console.log(`this is name ${uniqueName}`)
+  // console.log(uniqueName)
+  res.render('Chatpdf', { pdfName: uniqueName });
+
+})
 
 
 

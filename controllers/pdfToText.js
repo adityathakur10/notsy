@@ -66,7 +66,7 @@ async function ydDownload(id){
         // add your content to the document here, as usual
         doc.text(fd);
         // get a blob when you're done   ${textFile}.pdf
-        doc.pipe(fs.createWriteStream(`./public/pdf/${textFile}.pdf`));
+         doc.pipe(fs.createWriteStream(`./public/pdf/${textFile}.pdf`));
         doc.end();
   
 res(textFile)

@@ -11,7 +11,7 @@
 
 <body>
 
-
+  <input type="hidden" id="pdfName" value="<%= pdfName%>">
     <section class="videovwr">
         <header class="videovwr-header">
             <div class="pdfvwr-header-title">
@@ -19,7 +19,7 @@
             </div>
         </header>
 
-        <object data="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210101201653/PDF.pdf">
+        <object data="./pdf/<%= pdfName%>.pdf">
         </object>
         </iframe>
         </main>
