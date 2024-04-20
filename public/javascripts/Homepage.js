@@ -19,7 +19,9 @@ var arr = [
     { icon: "/images/edit.png", name: "Digital System", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
     { icon: "/images/edit.png", name: "Analog Electronics", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
     { icon: "/images/edit.png", name: "Advanced Algo", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
-    { icon: "/images/edit.png", name: "AI", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." }
+    { icon: "/images/edit.png", name: "AI", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
+    { icon: "/images/edit.png", name: "AI", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
+    { icon: "/images/edit.png", name: "AI", des: "Lorem ipsum dolor sit amet,dunt ut labore et dolore magna aliqua." },
 ]
 
 function enterNote() {
