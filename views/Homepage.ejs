@@ -26,7 +26,7 @@
                     <p>ABOUT US</p>
                     <p>DEVLOPERS</p>
                 </div>
-                <p><button class="login-button">Login</button></p>
+                <p><button type="submit" class="login-button">Login</button></p>
                 <p class="User">Hi, User <i class="fa-solid fa-circle-user"></i></p>
             </div>
         </div>
@@ -34,6 +34,67 @@
         <form hidden id="uploadform" action="/fileupload" method="post" enctype="multipart/form-data">
             <input type="file" name="pdf">
         </form>
+
+        <div class="wrapper">
+            <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for=""><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
         <div class="hero">
             <div class="hero-sec">
@@ -48,6 +109,8 @@
                 </div>
             </div>
         </div>
+
+
 
         <div class="upload-section">
             <div class="upload" id="video">
@@ -78,19 +141,21 @@
         <div class="page-2">
             <div class="notes-heading">
                 <h4>YOUR NOTES</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
                     ex ea commodo consequat. </p>
             </div>
-    
+
             <div class="notes">
                 <div class="notes-container">
                 </div>
             </div>
-    
-    </div>
 
-    
+        </div>
+
+
         <footer>
             <div class="media">
                 <div class="insta">
